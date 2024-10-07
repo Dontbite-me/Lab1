@@ -94,6 +94,7 @@ public class Main {
                     int v = sc.nextInt();
                     boolean V = n.is35(v);
                     out.println(V);
+                    break;
                 case 3:
                     out.println("Введите три числа: ");
                     int q1 = sc.nextInt();
@@ -101,6 +102,7 @@ public class Main {
                     int q3 = sc.nextInt();
                     int Q = n.max3(q1, q2, q3);
                     out.println("Наибольшее число: " + Q);
+                    break;
                 case 4:
                     out.println("Введите 2 числа: ");
                     int g1 = sc.nextInt();
@@ -108,12 +110,14 @@ public class Main {
                     int G = n.sum2(g1, g2);
                     out.println("Полученная сумма: ");
                     out.println(G);
+                    break;
 
                 case 5:
                     out.println("Введите день недели: ");
                     int day1 = sc.nextInt();
                     String Day1 = n.day(day1);
                     out.println(Day1);
+                    break;
             }
         }
 
@@ -300,7 +304,6 @@ public class Main {
 
 
     public double fraction(double x) {
-        Main n = new Main();
         x = x % 1;
         out.println("Дробная часть числа x: ");
         return x;
@@ -308,7 +311,6 @@ public class Main {
 
 
     public int charToNum(char x) {
-        Main n = new Main();
         int num = Character.getNumericValue(x);
         out.println("Полученное число: ");
         out.println(num);
@@ -513,7 +515,6 @@ public class Main {
 
     public int[] add (int[] arr, int[] ins, int pos){
         int[] result = new int[arr.length + ins.length];
-        int c = 0;
         for (int i=0; i < arr.length + ins.length; i++) {
             for (int j=0;j < arr.length; j++) {
                 if (i==pos){
