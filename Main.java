@@ -409,7 +409,6 @@ public class Main {
 
 
     public String day(int x) {
-        if ((x >= 1) && (x <= 7)) {
             switch (x) {
                 case 1:
                     return "Понедельник";
@@ -425,12 +424,9 @@ public class Main {
                     return "Суббота";
                 case 7:
                     return "Воскресенье";
+                default:
+                    return "Это не день недели";
             }
-
-        } else {
-            return "Это не день недели";
-        }
-        return day(x);
     }
 
 
